@@ -13,6 +13,6 @@ gsap.to(sections, {
     scrub: 1,
     snap: 1 / (sections.length - 1),
     // base vertical scrolling on how wide the container is so it feels more natural.
-    end: () => "+=" + document.querySelector(".wrapper").offsetWidth
+    end: () => "+=" + document.querySelector('.wrapper').offsetWidth
   }
 });

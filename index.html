@@ -4,67 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--custom css-->
-    <link rel="stylesheet" href="Assets/CSS/style.css">
     <!--boostrap cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <!--custom css-->
+     <link rel="stylesheet" href="Assets/CSS/style.css">
+     <!--responsivee css-->
+     <link rel="stylesheet" href="Assets/CSS/responsive.css">
     <!--font awesome-->
     <script src="Assets/libraries/fontawesome-free-5.15.1-web/js/all.js"></script>
 </head>
 <body>
-    <aside>
     <div class="navs">
     <div class="logo">
         <a href="index.html">
-        <h2>Best Interior</h2>
+        <h2>Best<span class="interior">Interior</span></h2>
         </a>
     </div>
+    
+    <!--
     <div class="navbar">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#">Our Works</a></li>
             <li><a href="#">Contact</a></li>
          </ul>
     </div>
-    <div class="sm">
-        <div class="twitter">
-<a href="#"><i class="fab fa-twitter-square"></i></a>
-        </div>
-        <div class="ig">
-<a href="#"><i class="fab fa-instagram-square"></i></a>
-        </div>
-        <div class="fb">
-<a href="#"><i class="fab fa-facebook-square"></i></a>
-        </div>
+-->
     </div>
-    </div>
-    </aside>
-        
-  <div class="main">      
+   
       <!--home section-->
   <div class="wrapper">  
-<section class="panel home-section">
-    <div class="video">
-        <video width="100%" height="100%" loop muted autoplay>
-            <source src="Assets/video/production ID_3773486.mp4" type="video/mp4">
-        </video>
+    <section class="panel home-section">
+        <div class="video">
+            <video width="100%" height="100%" loop muted autoplay>
+                <source src="Assets/video/production ID_3773486.mp4" type="video/mp4">
+            </video>   
     </div>
-    <div class="video-content">
-        <h1>The Best Interior</h1>
-        <p>Best Interior is here to make you feel at home. We wow you with our design and also strive to always deliver the best</p>
-    <a href="#">= Learn More =</a>
-    </div>
-    </section>  
+        <div class="video-content">
+            <h1>The Best Interior</h1>
+            <p>Best Interior is here to make you feel at home. We wow you with our design and also strive to always deliver the best</p>
+        <a href="#" class="btn">= Learn More =</a>
+        </div>
+        </section>  
     
     <!--About section-->
-    <section class="panel about-section">
+    <section class="panel about-section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <img src="./Assets/Images/man1.jpg" alt="a man">
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                 <h1>About Best Interior</h1>
                     <h4>We are the best.</h4>
                 <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam?</p>
@@ -167,7 +158,6 @@
     <!--social media section ends-->
     
   </div><!--end of wrapper div-->
-  </div><!--end of main div-->
 
 <!--jquery js-->
  <script src="Assets/JS/jquery-3.4.1.min.js"></script>
@@ -176,7 +166,7 @@
  <!--Gsap plugin-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <!--scrolltrigger plugin-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
- <script src="Assets/JS/script.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> 
+<script src="Assets/JS/script.js"></script> 
 </body>
 </html>

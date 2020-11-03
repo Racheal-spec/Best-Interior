@@ -1,71 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 :root {
     --primarycolor: #504C47;
     --secondarycolor: #97918A;
     --btncolor: #403D39;
     --brown: #383531;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
 }
 body{
-  overflow-x: hidden;
-  width: 100%;
-  height: 100%;
+    overflow-x: hidden;
+    position: relative;
 }
 p {
     font-family: 'Laila', serif;
 }
 .logo h2 {
-    font-family: 'Pacifico', cursive;
-    color: whitesmoke;
+    font-family: 'Piedra', cursive;
+    color: var(--secondarycolor);
 }
-aside{
-    width: 20%;
-    height: 100%;
-    float: left;
-    position: fixed;
-    background-color: var(--primarycolor);
-    overflow-y: scroll;
+.interior{
+    color: cornsilk;
 }
-/*
-aside::-webkit-scrollbar{
-    width: 0;
-}
-*/
-.main{
-    width: 80%;
-    height: 100%;
-    float: right;
-}
+
 .wrapper{
     width: 600%;
     display: flex;
     height: 100%;
-    z-index: -10;
     flex-wrap: nowrap;
 }
+
 .navs {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.logo {
-    background-color: var(--secondarycolor);
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    justify-content: flex-start;
+    position: absolute;
+    position: fixed;
+    padding: 20px;
+    z-index: 2;
 }
 .logo > a:hover {
     text-decoration: none;
 }
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}  
 .navbar ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+    position: absolute;
+    top: -30%;
     margin-right: 30px;
 }
 .navbar > ul > li {
@@ -75,43 +71,30 @@ align-items: center;
 justify-content: center;
 }
 .navbar > ul > li > a {
-    color: white;
+    color: green;
     font-weight: bold;
-}
-.sm{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondarycolor);
-    width: 100%;
-    padding: 20px 0;
-}
-.sm a{
-    color: white;
-    margin: 0 20px;
-    font-size: 2rem;
 }
 /**=====** Home **====**/
 
 .video{
-    min-width: 100vw;
-    min-height: 100vh;
+    width: 100vw;
+    height: auto;
     /* video effect control change the number to incrase or reduce effect*/
     filter:brightness(30%);
 }
 .video-content{
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
-    text-align: center;
 }
 .video-content p {
     width: 70%;
+    text-align: center;
 }
 .video-content a {
     color: goldenrod;
@@ -123,9 +106,9 @@ justify-content: center;
 
 /***===***About***===***/
 .about-section{
-    padding: 60px;
+    padding: 60px 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .about-section h1 {
     color: var(--primarycolor);
@@ -157,9 +140,9 @@ justify-content: center;
     text-align: center;
 }
 .work-section, .work-section2{
-    padding: 60px;
+    padding: 60px 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .img1 img, .img2 img, .img3 img, .img4 img{
     width: 100%;
@@ -175,9 +158,9 @@ justify-content: center;
 /***===Contact section***===***/
 .contact-section{
     background-color: #4f5148fd;
-    padding: 60px;
+    padding: 60px 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     color: rgba(255, 255, 255, 0.493);
 }
 .contact-section h1 {
@@ -207,17 +190,14 @@ textarea {
 
 section.contact2 {
     text-align: center;
-    padding: 60px;
+    padding: 60px 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
   }
   .contact2 {
       display: flex;
       align-items: center;
       justify-content: center;
-  }
-  .contact2 .container{
-    margin-right: 40%;
   }
   section.contact2 h2 {
     margin-top: 0;
