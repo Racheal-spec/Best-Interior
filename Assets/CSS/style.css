@@ -26,11 +26,11 @@ p {
 .logo h2 {
     font-family: 'Piedra', cursive;
     color: var(--secondarycolor);
+    font-size: 2.6rem;
 }
 .interior{
-    color: cornsilk;
+    color: var(--brown);
 }
-
 .wrapper{
     width: 600%;
     display: flex;
@@ -43,73 +43,105 @@ p {
     justify-content: flex-start;
     position: absolute;
     position: fixed;
-    padding: 20px;
+    padding: 20px 70px;
     z-index: 2;
 }
 .logo > a:hover {
     text-decoration: none;
 }
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}  
-.navbar ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    position: absolute;
-    top: -30%;
-    margin-right: 30px;
-}
-.navbar > ul > li {
-margin: 35px 0;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.navbar > ul > li > a {
-    color: green;
-    font-weight: bold;
-}
 /**=====** Home **====**/
 
-.video{
+.home-section{
     width: 100vw;
     height: auto;
     /* video effect control change the number to incrase or reduce effect*/
-    filter:brightness(30%);
+    /*filter:brightness(30%);*/
 }
-.video-content{
-    position: absolute;
-    top: 30%;
-    left: 15%;
+.home-section .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    color: white;
 }
-.video-content p {
-    width: 70%;
-    text-align: center;
+.video-col{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 11% 4%;
+    background-color: rgba(245, 222, 179, 0.253); 
+    transform: scaleY(0);
+    transform-origin: bottom;
 }
-.video-content a {
-    color: white;
-    font-weight: bold;
-}
-.btn{
-    width: 120px;
-    height: 40px;
-    background-color: goldenrod;
+.box{
+    position: absolute;
+    border: 6px solid #383531;
+    top: 20%;
+    left: 7%;
+    width: 540px;
+    height: 350px;
+    opacity: 0;
+    transform: scaleY(0);
+    /*border-left: none;*/
    
 }
-.btn:hover{
-    background-color: var(--secondarycolor);
-    text-decoration: none;
+#watch {
+    background: none;
+    border: none;
 }
+.hero-text{
+    position: absolute;
+    left: 0;
+    margin-left: 4%;
+    margin-bottom: -47%;
+}
+.hero-text p {
+    width: 80%;
+    margin: 15px 0;
+}
+.watch-btn{
+   background-color: #f60;
+   width: 80px;
+   height: 80px;
+   font-size: 2.4rem;
+   margin-top: 50px;
+   margin-left: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.fa-play{
+    color: white;
+    line-height: 100px;
+    margin-left: 6px;
+}
+.watch-btn:before, .watch-btn:after{
+    content: "";
+    position: absolute;
+    border: 2px solid #f60;
+    border-radius: 50%;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+@keyframes animate {
+0%{
+    transform: scale(.5);
+}
+50%{
+opacity: 1;
+}
+100%{
+    transform: scale(1.5);
+}
+}
+.watch-btn:after{
+    animation-delay: 0.5s;
+}
+
 /***===***About***===***/
 .about-section{
     padding: 60px 0;
@@ -199,7 +231,19 @@ textarea {
 .message{
     margin: 20px 0;
 }
-
+.btn{
+    margin: 5px 0;
+    padding: 5px;
+    width: 120px;
+    height: 38px;
+    font-weight: bold;
+    background: white;
+    color: var(--brown);
+}
+.btn:hover{
+    background-color: var(--secondarycolor);
+    text-decoration: none;
+}
 /* social-media Contact section*/
 
 section.contact2 {
