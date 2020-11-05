@@ -18,7 +18,8 @@
 }
     .pin-spacer {
         width: 2px !important; 
-        height: 0 !important;
+        height: 2px !important;
+        padding: 2px !important;
     }
     .hero-text{
         top: 20%;
