@@ -4,28 +4,23 @@
 .navs{
     padding: 20px 30px;
 }
-    .home-section{
-        height: 100vh;
-    }
-    .video-col {
-        bottom: 18%;
-    }
+  .video-col{
+      bottom: 18%;
+  }  
    .box{
-      display: none;
+    top: 38% !important;
    }
    .contact2 .container {
     margin-bottom: 20% !important;
 }
     .pin-spacer {
         width: 2px !important; 
-        height: 2px !important;
-        padding: 2px !important;
     }
     .hero-text{
-        top: 20%;
+        margin-top: 80% !important;
     } 
     .hero-text h1 {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     .hero-text p {
         width: 98%;
@@ -56,7 +51,95 @@
    .contact2 .container {
     margin-bottom: -20% !important;
 } 
-.video-col {
-    bottom: -25%;
+
+.hero-text{
+    margin-top: 120% !important;
+} 
+.video-box{
+    margin-top: 80%;
+}
+.box{
+    top: 69.5%;
 }
 }
+
+@media screen and (max-width: 414px) and (min-height: 736px){
+    .box{
+        top: 76.5% !important;
+    }
+    .video-box{
+        margin-top: 88%;
+    }
+}
+@media screen and (max-width: 414px) and (min-height: 896px){
+    .box{
+        top: 72% !important;
+    }
+}
+@media screen and (device-width: 360px){
+    .hero-text{
+        margin-top: 150% !important;
+    } 
+    .video-box{
+        margin-top: 110%;
+    }
+    .box{
+        top: 84.5% !important;
+    }
+}
+@media screen and (device-width: 320px){
+    .hero-text{
+        margin-top: 160% !important;
+    }
+}
+.box{
+    top: 74% !important;
+}
+@media screen and (device-width: 375px){
+    .hero-text{
+        margin-top: 140% !important;
+    }
+    .video-box{
+        margin-top: 100%;
+    }
+    .box{
+        top: 82.5% !important;
+    }
+}
+@media screen and (device-width: 375px) and (min-height: 812px){
+    .box{
+       top: 77% !important;
+    }
+}
+@media screen and (max-width: 1440px) and (min-height: 900px){
+    .box{
+        top: 26%;
+        left: 19%;
+     }
+ 
+.hero-text{
+    margin-top: 60%;  
+}
+
+}
+/*
+@media screen and (max-width: 800px){
+    .box{
+        display: none;
+    }
+    .hero-text{
+        margin-top: 150%;
+    }
+    .video-box{
+        top: 50% ;
+    }
+   }
+   */
+@media screen and (max-width: 1928px){
+    .box{
+        top: 23%;
+    }
+    .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
+        margin-top: 150px;
+    }
+   }

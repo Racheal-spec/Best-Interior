@@ -49,9 +49,9 @@ tl.from('.about-text', {
 
 /****Home Page animation */
  let watchBtn = document.querySelector('.watch-btn');
-watchBtn.addEventListener('click', function(){
 
-  console.log('watched');
+watchBtn.addEventListener('click', function(){
   TweenMax.to('.video-col', 1 , {scaleY: 1, height: '100vh', ease: Circ.easeOut });
   TweenMax.to('.box', 2 , {opacity: 1, scale:1, ease: Elastic.easeOut, delay: 1})
+  TweenMax.to('.video-box', 2 , {opacity: 1, ease: Power2.easeOut, delay: 1})
 })

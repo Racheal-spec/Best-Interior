@@ -66,21 +66,21 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 11% 4%;
     background-color: rgba(245, 222, 179, 0.253); 
     transform: scaleY(0);
     transform-origin: bottom;
+    padding: 11% 5%;
+}
+.video-box{
+    opacity: 0;
 }
 .box{
     position: absolute;
     border: 6px solid #383531;
-    top: 20%;
-    left: 7%;
-    width: 540px;
-    height: 350px;
-    opacity: 0;
+    padding: 30%;
+    top: 18%;
+    left: 19%;
     transform: scaleY(0);
-    /*border-left: none;*/
    
 }
 #watch {
@@ -91,7 +91,7 @@ p {
     position: absolute;
     left: 0;
     margin-left: 4%;
-    margin-bottom: -47%;
+    margin-top: 50%;
 }
 .hero-text p {
     width: 80%;
