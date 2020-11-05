@@ -1,7 +1,9 @@
 
 
 @media screen and (max-width: 768px){
-
+.navs{
+    padding: 20px 30px;
+}
     .home-section{
         height: 100vh;
     }
@@ -15,7 +17,8 @@
     margin-bottom: 20% !important;
 }
     .pin-spacer {
-        width: 0px !important; 
+        width: 2px !important; 
+        height: 0 !important;
     }
     .hero-text{
         top: 20%;
