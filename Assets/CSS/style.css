@@ -66,22 +66,13 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: rgba(245, 222, 179, 0.253); 
+    padding: 11% 5%;
     transform: scaleY(0);
     transform-origin: bottom;
-    padding: 11% 5%;
+    background-color: rgba(245, 222, 179, 0.445);  
 }
 .video-box{
-    opacity: 0;
-}
-.box{
-    position: absolute;
-    border: 6px solid #383531;
-    padding: 30%;
-    top: 18%;
-    left: 19%;
-    transform: scaleY(0);
-   
+   opacity: 0;
 }
 #watch {
     background: none;

@@ -1,24 +1,18 @@
 
-
 @media screen and (max-width: 768px){
 .navs{
     padding: 20px 30px;
-}
-  .video-col{
-      bottom: 18%;
-  }  
-   .box{
-    top: 38% !important;
-   }
+} 
    .contact2 .container {
     margin-bottom: 20% !important;
 }
     .pin-spacer {
         width: 2px !important; 
     }
-    .hero-text{
-        margin-top: 80% !important;
-    } 
+ 
+    .video-box{
+        margin-top: 35% !important;
+    }
     .hero-text h1 {
         font-size: 1.7rem;
     }
@@ -51,50 +45,51 @@
    .contact2 .container {
     margin-bottom: -20% !important;
 } 
-
 .hero-text{
     margin-top: 120% !important;
 } 
 .video-box{
-    margin-top: 80%;
+    margin-top: 90%;
 }
-.box{
-    top: 69.5%;
+.about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
+    margin-top: 20px !important;
+}
+.about-section{
+    height: auto;
+}
+.about-section img {
+    height: 250px !important;
+    object-fit: cover;
+}
+.img1 img, .img2 img, .img3 img, .img4 img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 }
 
-@media screen and (max-width: 414px) and (min-height: 736px){
-    .box{
-        top: 76.5% !important;
-    }
-    .video-box{
-        margin-top: 88%;
-    }
-}
-@media screen and (max-width: 414px) and (min-height: 896px){
-    .box{
-        top: 72% !important;
-    }
-}
 @media screen and (device-width: 360px){
     .hero-text{
         margin-top: 150% !important;
     } 
     .video-box{
-        margin-top: 110%;
-    }
-    .box{
-        top: 84.5% !important;
+        margin-top: 105%;
     }
 }
+
 @media screen and (device-width: 320px){
     .hero-text{
-        margin-top: 160% !important;
+        margin-top: 150% !important;
     }
-}
-.box{
-    top: 74% !important;
-}
+    .video-box{
+        margin-top: 100%;
+    }
+    .watch-btn{
+        margin-top: -35px;
+    }
+}  
+
+
 @media screen and (device-width: 375px){
     .hero-text{
         margin-top: 140% !important;
@@ -102,43 +97,25 @@
     .video-box{
         margin-top: 100%;
     }
-    .box{
-        top: 82.5% !important;
-    }
-}
-@media screen and (device-width: 375px) and (min-height: 812px){
-    .box{
-       top: 77% !important;
-    }
-}
-@media screen and (max-width: 1440px) and (min-height: 900px){
-    .box{
-        top: 26%;
-        left: 19%;
-     }
- 
-.hero-text{
-    margin-top: 60%;  
 }
 
-}
-/*
 @media screen and (max-width: 800px){
-    .box{
-        display: none;
-    }
     .hero-text{
-        margin-top: 150%;
+        margin-top: 150% !important;
     }
-    .video-box{
-        top: 50% ;
+    .pin-spacer{
+        width: 2px !important;
     }
    }
-   */
-@media screen and (max-width: 1928px){
-    .box{
-        top: 23%;
+
+@media screen and (max-width: 1440px) and (min-height: 900px){
+    .hero-text{
+        margin-top: 60%;  
     }
+
+}
+
+@media screen and (max-width: 1928px){
     .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
         margin-top: 150px;
     }
