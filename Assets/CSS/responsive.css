@@ -9,7 +9,6 @@
     .pin-spacer {
         width: 2px !important; 
     }
- 
     .video-box{
         margin-top: 35% !important;
     }
@@ -49,7 +48,7 @@
     margin-top: 120% !important;
 } 
 .video-box{
-    margin-top: 90%;
+    margin-top: 65% !important;
 }
 .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
     margin-top: 20px !important;
@@ -58,7 +57,7 @@
     height: auto;
 }
 .about-section img {
-    height: 250px !important;
+    height: 300px !important;
     object-fit: cover;
 }
 .img1 img, .img2 img, .img3 img, .img4 img{
@@ -112,11 +111,13 @@
     .hero-text{
         margin-top: 60%;  
     }
-
+    .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
+        margin-top: 20px !important;
+    }
 }
 
 @media screen and (max-width: 1928px){
     .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
-        margin-top: 150px;
+        margin-top: 12px;
     }
    }
