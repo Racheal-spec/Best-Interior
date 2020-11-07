@@ -49,30 +49,85 @@ p {
 .logo > a:hover {
     text-decoration: none;
 }
+
+.navigation{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+.navigation li{
+    width: 10px;
+    height: 10px;
+    background-color: #383531;
+    border: 2px solid #a1a1a1;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.navigation li:hover, .navigation li.selected {
+    transform: scale(1.8);
+    background-color: white;
+}
 /**=====** Home **====**/
 
 .home-section{
     width: 100vw;
     height: auto;
-    /* video effect control change the number to incrase or reduce effect*/
-    /*filter:brightness(30%);*/
 }
 .home-section .row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.video-col{
+.img-col{
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 11% 5%;
+   /* padding: 11% 5%;*/
     transform: scaleY(0);
     transform-origin: bottom;
-    background-color: rgba(245, 222, 179, 0.445);  
+    background-color: #F5F6F8; 
 }
-.video-box{
+.img-box{
    opacity: 0;
+}
+.img-col img{
+    max-width: 100%;
+}
+.video-container{
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+}
+.video-container.active{
+    visibility: visible;
+    opacity: 1;
+}
+video{
+position: relative;
+max-width: 70%;
+outline: none;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
 }
 #watch {
     background: none;
@@ -84,14 +139,18 @@ p {
     margin-left: 4%;
     margin-top: 50%;
 }
+.hero-text h1{
+    font-size: 2.3rem;
+    width: 97%;
+}
 .hero-text p {
     width: 80%;
     margin: 15px 0;
 }
 .watch-btn{
    background-color: #f60;
-   width: 80px;
-   height: 80px;
+   width: 60px;
+   height: 60px;
    font-size: 2.4rem;
    margin-top: 50px;
    margin-left: 20px;
@@ -145,10 +204,9 @@ opacity: 1;
 .about-section h4 {
     color: var(--secondarycolor);
 }
-
 .about-section img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -156,42 +214,58 @@ opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 30px;
 }
 
 /***===Our work***===***/
+
 .title{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     margin: 20px 50px;
 }
 .title p {
     text-align: center;
 }
+
 .work-section h1{
     color: var(--brown);
 }
-.work-section, .work-section2{
+.work-section{
     padding: 60px 0;
     width: 100vw;
     height: auto;
+    background-color: #D8DDE2; 
 }
-.img1 img, .img2 img, .img3 img, .img4 img{
+.work-section ul {
+    margin-left: 30px;
+}
+.work-section img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
-.img2{
-    margin-top: 7%;
+.work-section .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
 }
-.img3{
-    margin-top: 12%;
+.work-section2{
+    padding: 60px 0;
+    width: 100vw;
+    height: auto;
+    background-color: #F5F6F8;
 }
-.img4{
-    margin-top: 19%;
+.work-section2 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
+
 /***===Contact section***===***/
 .contact-section{
     background-color: #4f5148fd;

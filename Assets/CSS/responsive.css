@@ -9,8 +9,11 @@
     .pin-spacer {
         width: 2px !important; 
     }
-    .video-box{
-        margin-top: 35% !important;
+    .img-box{
+        margin-top: 40% !important;
+    }
+    .hero-text{
+        margin-bottom: 70% !important;
     }
     .hero-text h1 {
         font-size: 1.7rem;
@@ -45,10 +48,11 @@
     margin-bottom: -20% !important;
 } 
 .hero-text{
-    margin-top: 120% !important;
+    margin-bottom: 30% !important;
+    z-index: 2;
 } 
-.video-box{
-    margin-top: 65% !important;
+.img-box{
+    margin-top: 105% !important;
 }
 .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
     margin-top: 20px !important;
@@ -60,10 +64,14 @@
     height: 300px !important;
     object-fit: cover;
 }
-.img1 img, .img2 img, .img3 img, .img4 img{
+.work-section2 img{
     width: 100%;
-    height: 250px;
+    height: 120px !important;
     object-fit: cover;
+}
+.title{
+    text-align: center;
+    margin: 20px 0 !important;
 }
 }
 
@@ -71,8 +79,8 @@
     .hero-text{
         margin-top: 150% !important;
     } 
-    .video-box{
-        margin-top: 105%;
+    .img-box{
+        margin-top: 105% !important;
     }
 }
 
@@ -80,7 +88,7 @@
     .hero-text{
         margin-top: 150% !important;
     }
-    .video-box{
+    .img-box{
         margin-top: 100%;
     }
     .watch-btn{
@@ -91,16 +99,19 @@
 
 @media screen and (device-width: 375px){
     .hero-text{
-        margin-top: 140% !important;
+        margin-bottom: 10% !important;
     }
-    .video-box{
-        margin-top: 100%;
+    .img-box{
+        margin-top: 120% !important;
     }
 }
 
 @media screen and (max-width: 800px){
     .hero-text{
-        margin-top: 150% !important;
+        margin-top: 90% !important;
+    }
+    .img-box{
+        margin-top: 50%;
     }
     .pin-spacer{
         width: 2px !important;
@@ -109,15 +120,24 @@
 
 @media screen and (max-width: 1440px) and (min-height: 900px){
     .hero-text{
-        margin-top: 60%;  
+        margin-top: 40%;  
     }
-    .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
-        margin-top: 20px !important;
+    .img-box{
+        margin-top: 15%;
+    }
+   .home-section .row, .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
+        padding-top: 15% !important;
+    }
+    .work-section2{
+        padding-top: 1.5%;
+    }
+    .work-section2 .row{
+        padding-top: 3% !important;
     }
 }
 
 @media screen and (max-width: 1928px){
-    .about-section .row, .work-section .row, .work-section2 .row, .contact-section .row {
+    .about-section .row, .work-section .row,.contact-section .row {
         margin-top: 12px;
     }
    }
