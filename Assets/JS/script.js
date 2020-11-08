@@ -42,6 +42,7 @@ const videoPlay = document.querySelector('video');
 const closeBtn = document.querySelector('.close');
 
 watchBtn.addEventListener('click', ()=> {
+  gsap.to('.video-container', {duration: 2, opacity: 1, ease: Power2.easeOut});
   videoContainer.classList.toggle('active');
   videoPlay.pause();
   videoPlay.currentTime = 0;

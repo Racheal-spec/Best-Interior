@@ -55,16 +55,16 @@ p {
     padding: 0;
     position: fixed;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
     list-style: none;
 }
 .navigation li{
     width: 10px;
     height: 10px;
-    background-color: #383531;
+    background-color: #4f5148fd;
     border: 2px solid #a1a1a1;
-    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -87,7 +87,6 @@ p {
     position: absolute;
     right: 0;
     bottom: 0;
-   /* padding: 11% 5%;*/
     transform: scaleY(0);
     transform-origin: bottom;
     background-color: #F5F6F8; 
@@ -100,34 +99,34 @@ p {
 }
 .video-container{
     position: fixed;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10000;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #D8DDE2;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
 }
 .video-container.active{
     visibility: visible;
-    opacity: 1;
+    opacity: 0;
 }
 video{
 position: relative;
-max-width: 70%;
+max-width: 100%;
 outline: none;
 }
 .close{
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: -50px;
     right: 20px;
     cursor: pointer;
-    color: white;
+    color: black;
 }
 #watch {
     background: none;
@@ -227,10 +226,6 @@ opacity: 1;
     width: 100%;
     margin: 20px 50px;
 }
-.title p {
-    text-align: center;
-}
-
 .work-section h1{
     color: var(--brown);
 }
