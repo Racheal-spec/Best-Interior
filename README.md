@@ -1,1 +1,2 @@
 # Best-Interior
+An interior decoration website that shows pictoral representation of what the company do in a detailed manner. And also a small description about Best Interior and how to contact the company.

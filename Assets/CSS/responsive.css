@@ -44,7 +44,11 @@
     .contact-section h1, .work-section h1 {
       font-size: 1.8rem;
     }
+    .preloader-img{
+        left: 20% !important;
+    }
 }
+
 
 
 
@@ -77,6 +81,9 @@
 
 
 @media screen and (device-width: 375px){
+    body{
+        height: auto;
+    }
     .hero-text{
         margin-bottom: -40% !important;
     }

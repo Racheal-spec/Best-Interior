@@ -20,16 +20,49 @@ body{
     position: relative;
     height: 100vh !important;
 }
+/***Preloader styles***/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: wheat;
+    background-position: center;
+    z-index: 99999;
+    transition: transform 1.5s ease-in;
+}
+.preloader-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 40%;
+    background-image: url('../Images/logoimg.png');
+    background-repeat: no-repeat; 
+    animation: preloader 5s infinite;
+}
+.preload-finish{
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+  @keyframes preloader {
+    0% {
+      transform: translateX(0);
+      animation-timing-function: steps(4, end);
+    }
+    50% {
+        transform: translateX(-100px);
+      animation-timing-function: steps(8, jump-both);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+  }
+/****Main style starts here*****/
+
 p {
     font-family: 'Laila', serif;
-}
-.logo h2 {
-    font-family: 'Piedra', cursive;
-    color: var(--secondarycolor);
-    font-size: 2.6rem;
-}
-.interior{
-    color: var(--brown);
 }
 .wrapper{
     width: 600%;
@@ -43,18 +76,22 @@ p {
     justify-content: flex-start;
     position: absolute;
     position: fixed;
-    padding: 20px 70px;
+    padding: 30px 60px;
     z-index: 2;
 }
 .logo > a:hover {
     text-decoration: none;
 }
-
+.logo img{
+    position: absolute;
+    top: -95px;
+}
 .navigation{
     margin: 0;
     padding: 0;
     position: fixed;
     right: 20px;
+    top: 20px;
     display: flex;
     list-style: none;
 }
@@ -90,9 +127,6 @@ p {
     transform: scaleY(0);
     transform-origin: bottom;
     background-color: #F5F6F8; 
-}
-.img-box{
-   opacity: 0;
 }
 .img-col img{
     max-width: 100%;
@@ -263,11 +297,11 @@ opacity: 1;
 
 /***===Contact section***===***/
 .contact-section{
-    background-color: #4f5148fd;
+    background-color: var(--secondarycolor);
     padding: 60px 0;
     width: 100vw;
     height: auto;
-    color: rgba(255, 255, 255, 0.493);
+    color: white;
 }
 .contact-section h1 {
     color: white;
@@ -284,24 +318,43 @@ form{
 form input {
     width: 100%;
     height: 100%;
+    background-color: var(--secondarycolor);
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.493);
+    border-left: none;
+    color: white;
+}
+form input:focus{
+    outline: none;
 }
 textarea {
-    padding: 50px 10px;
+    padding: 40px 10px;
+    background-color:  var(--secondarycolor);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.493);
+    color: white;
+}
+textarea:focus{
+    outline: none;
 }
 .message{
     margin: 20px 0;
 }
 .btn{
-    margin: 5px 0;
+    margin: 3px 0;
     padding: 5px;
     width: 120px;
     height: 38px;
     font-weight: bold;
-    background: white;
-    color: var(--brown);
+    background: var(--btncolor);
+    color: white;
+    transition: all 0.2s ease-in;
 }
 .btn:hover{
-    background-color: var(--secondarycolor);
+    background-color: wheat;
     text-decoration: none;
 }
 /* social-media Contact section*/

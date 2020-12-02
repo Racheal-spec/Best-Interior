@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+  const Preload = document.querySelector('.preloader');
+  Preload.classList.add('preload-finish');
+})
+
 
 //Horizontal scrolling animation using gsap scrolltrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -18,7 +23,6 @@ gsap.to(sections, {
   }
 });
 
-
 /****Home Page animation */
 
 let tl = gsap.timeline({
@@ -28,8 +32,8 @@ let tl = gsap.timeline({
 });
 
 tl.from('.logo', {opacity: 0 , duration: 1, x: -50});
-tl.from('.hero-text h1', {opacity: 0, duration: 0.8, y: -60 });
-tl.from('.hero-text p', {opacity: 0 , duration: 1, x: -200});
+tl.from('.hero-text h1', {opacity: 0, duration: 0.8, y: -60, delay: 1.5 });
+tl.from('.hero-text p', {opacity: 0 , duration: 1, delay: 0.3, x: -200});
 tl.from('.watch-btn', {opacity: 0 , duration: 1, ease: "power3.out", y: 200});
 
 tl.to('.img-col', {scaleY: 1, duration: 1, height: '100vh', ease: Circ.easeOut });
